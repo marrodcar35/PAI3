@@ -1,0 +1,22 @@
+{
+  "policies": {
+    "HttpsOnlyMode": "enabled",
+    "DisableTelemetry": true,
+    "DisableFirefoxStudies": true,
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Cryptomining": true,
+      "Fingerprinting": true
+    },
+    "DisablePocket": true,
+    "ExtensionSettings": {
+      "*": {
+        "installation_mode": "blocked",
+        "blocked_install_message": "Instalación de extensiones bloqueada por la directiva de seguridad de la universidad."
+      },
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "allowed"
+      }
+    }
+  }
+}
